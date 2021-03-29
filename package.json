@@ -1,0 +1,25 @@
+{
+  "name": "masteryder.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masteryder/masteryder.github.io.git"
+  },
+  "author": "João Ventura <joao-ventura@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masteryder/masteryder.github.io/issues"
+  },
+  "homepage": "https://github.com/masteryder/masteryder.github.io#readme"
+}
