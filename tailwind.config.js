@@ -13,6 +13,10 @@ module.exports = {
     },
     rotate: {
       '720': '720deg',
+    },
+    fontFamily:{
+      'title': ['Dela Gothic One', 'sans serif'],
+      'body': ['Roboto', 'sans serif']
     }
   },
   variants: {
