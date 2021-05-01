@@ -2,16 +2,40 @@
   "name": "masteryder.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "postcss.config.js",
-  "dependencies": {},
+  "main": "app/js/index.js",
+  "dependencies": {
+    "postcss-import": "^14.0.1"
+  },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
+    "cssnano": "^5.0.2",
+    "eslint": "^7.25.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "jest": "^26.6.3",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.0-nightly.649",
     "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "postcss-loader": "^5.2.0",
+    "stylelint-config-standard": "^22.0.0",
     "tailwindcss": "^2.0.4"
   },
   "scripts": {
+    "postcss:watch": "postcss app/css/index.pcss -o app/css/index.css --env development -w",
+    "postcss:build": "postcss app/css/index.pcss -o app/css/index.css --env production",
+    "parcel:serve": "parcel app/index.html",
+    "parcel:watch": "parcel watch app/index.html",
+    "parcel:build": "parcel build app/index.html",
+    "clean": "rm -rf dist .cache",
+    "build": "npm-run-all -s clean postcss:build parcel:build",
+    "start": "npm-run-all -s clean -p postcss:watch parcel:serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": "defaults",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/masteryder/masteryder.github.io.git"
