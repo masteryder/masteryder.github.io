@@ -1,0 +1,8 @@
+{
+  "modules": true,
+  "plugins": {
+    "tailwindcss": "./tailwind.config.js",
+    "autoprefixer": {},
+    "postcss-import": {}
+  }
+}
